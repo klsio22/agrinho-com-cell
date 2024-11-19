@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristo Rei Apresenta Guarapuava</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background-color: white;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-teal-500 to-green-500 flex justify-between items-center">
+
+    <div class="flex justify-between items-center w-full sm:h-auto">
+      <!-- Menu Toggle -->
+      <details class="dropdown flex items-center">
+
+        <summary class="btn btn-ghost m-0 px-3 sm:px-4"><img src="../../assets/img/hanburguer.png" alt="Menu"
+            class="w-6 h-6 sm:w-full sm:h-10">
+        </summary>
+
+        <ul class="menu dropdown-content bg-green-600 rounded-box z-[1] w-52 p-2 shadow left-4 top-12">
+          <li><a href="/pages/forum.html" class="text-white hover:underline"">Fórum Principal</a></li>
+          <li><a href=" /pages/turismo.html" class="text-white hover:underline"" >Turismo</a></li>
+          <li><a href=" /pages/lugares.html" class="text-white hover:underline">Lugares Próximos a Você</a></li>
+          <li><a href="/pages/colegio.html" class="text-white hover:underline">Colégio Cristo Rei</a></li>
+          <li><a href="/pages/nos.html" class="text-white hover:underline">Sobre Nós</a></li>
+          <li><a href="/pages/robotica.html" class="text-white hover:underline">Robótica Cristo Rei</a></li>
+        </ul>
+      </details>
+
+      <!-- Logo -->
+      <div class="flex flex-col-reverse items-center sm:flex-row">
+        <div class="flex items-center space-x-4">
+          <a href="login.html"><img src="../../assets/img/icon_login.png" alt="Login" class="w-10"></a>
+          <input type="text" placeholder="Pesquisa"
+            class="bg-slate-50 w-full sm:block border-2 border-black rounded-full px-4 py-1 w-80" />
+        </div>
+      </div>
+
+      <div class="">
+        <img src="../../assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main -->
+
+  <main class="w-full bg-[#cef997]">
+    <div class="grid grid-cols-8 grid-rows-5 max-h-screen">
+      <div class="row-start-2 row-end-5 col-start-3 col-end-7 mt-[-2em]">
+        <h1>Você sabia que?</h1>
+      </div>
+      <div class="row-start-3 row-end-5 col-start-2 col-end-8 mt-[-1em] text-center text-lg">
+        <p>
+          O Colégio Cristo Rei, Fundado em 1983 com um propósito claro: educar e
+          inspirar gerações. Aqui, os alunos não são apenas estudantes, são
+          protagonistas de suas histórias de aprendizado. Com uma equipe dedicada de
+          educadores e instalações modernas, oferecemos um ambiente propício ao
+          desenvolvimento acadêmico e pessoal. No Colégio Cristo Rei, valorizamos não
+          apenas o conhecimento formal, mas também o crescimento emocional e social,
+          preparando nossos alunos não apenas para os desafios acadêmicos, mas também
+          para os desafios da vida.
+        </p>
+      </div>
+      <div
+        class="row-start-1 row-end-5 col-start-7 col-end-8 flex flex-col justify-end items-center gap-10 text-center">
+        <img src="./petshopimg/fachada.png" alt="" class="w-[400px]" />
+      </div>
+    </div>
+
+    <h2 class="text-2xl ml-12">O QUE NOSSO COLÉGIO OFERECE</h2>
+
+    <div class="flex flex-wrap gap-12 items-center justify-around my-12">
+      <div id="img1" class="flex flex-col items-center text-center bg-cover bg-center"
+        style="background-image: url('img/laboratorio.jpg'); height: 500px; width: 500px;">
+        <h2 class="text-white bg-black py-2 px-4">Laboratórios</h2>
+        <p class="text-black">
+          Nosso laboratório de informática é um espaço moderno e dinâmico, equipado com computadores
+          avançados e tecnologia de ponta. Aqui, nossos alunos exploram o mundo digital e desenvolvem
+          habilidades essenciais, sob a orientação de professores dedicados.
+        </p>
+      </div>
+
+      <div id="img2" class="flex flex-col items-center text-center bg-cover bg-center"
+        style="background-image: url('img/Salas de Aula professora.jpg'); height: 500px; width: 500px;">
+        <h2 class="text-white bg-black py-2 px-4">Aulas de Excelente Qualidade</h2>
+        <p class="text-black">
+          Nossas aulas são cuidadosamente planejadas para oferecer uma experiência educacional de qualidade
+          excepcional. Com professores dedicados e apaixonados, cada sessão é uma oportunidade de explorar
+          novos conceitos, estimular a curiosidade e promover o pensamento crítico.
+        </p>
+      </div>
+
+      <div id="img3" class="flex flex-col items-center text-center bg-cover bg-center"
+        style="background-image: url('img/Salas de Aula.jpg'); height: 500px; width: 500px;">
+        <h2 class="text-white bg-black py-2 px-4">Salas de Aulas</h2>
+        <p class="text-black">
+          Nossas salas de aula são espaços acolhedores e inspiradores, projetados para facilitar o aprendizado
+          eficaz e o desenvolvimento integral dos nossos alunos. Equipadas com tecnologia moderna e recursos
+          educacionais diversificados, proporcionamos um ambiente onde o ensino se torna interativo e envolvente.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="text-2xl ml-8">Tópicos Sobre</h2>
+    <h2 class="text-2xl ml-8">Nosso Colégio</h2>
+
+    <div class="flex flex-wrap gap-8 justify-around">
+      <div id="serv1" class="flex flex-col items-center">
+        <img src="img/Direção.jpg" alt="" class="mb-4" />
+        <h3 class="text-xl font-bold">Equipe Gestora</h3>
+        <p>DIREÇÃO: Ezilda de Fátima Ribeiro<br>DIREÇÃO AUXILIAR: Lislaine Pilati Bochnia</p>
+      </div>
+
+      <div id="serv2" class="flex flex-col items-center">
+        <img src="img/robotica.jpg" alt="" class="mb-4" />
+        <h3 class="text-xl font-bold">Robótica</h3>
+        <p>
+          Venha ter aulas de Robótica em aulas em Projetos contraturno e itinerário
+          formativo Física I
+        </p>
+      </div>
+    </div>
+
+    <div id="text" class="flex flex-col items-center mt-12">
+      <h2 class="text-2xl mb-4">Conheça</h2>
+      <h2 class="text-2xl mb-4">Nossa Equipe</h2>
+      <a href="nos.html">
+        <button class="text-white bg-teal-800 rounded-full px-10 py-2 font-bold text-lg">CONFIRA</button>
+      </a>
+    </div>
+
+    <div class="flex flex-col items-center justify-center my-12">
+      <h2 class="text-3xl font-bold mb-8">Informações do Colégio</h2>
+      <div class="flex items-center justify-around w-full">
+        <div class="mapBox w-[80vw] h-[35vw] bg-white">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.055063574178!2d-51.46249328917942!3d-25.36947097750706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef365b0176f1e5%3A0x68c5ac6ee6a991ea!2sCristo%20Rei%2C%20C%20E-Ef%20M!5e0!3m2!1spt-BR!2sbr!4v1722453271164!5m2!1spt-BR!2sbr"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-20 py-10 items-center justify-around bg-gradient-to-r from-teal-600 to-green-400 text-white">
+      <div id="1" class="text-center">
+        <h3 class="text-xl font-bold">Endereço</h3>
+        <h2 class="text-lg">
+          R. das Ameixeiras, 119 - Cristo Rei, <br>
+          Guarapuava - PR, 85060-160
+        </h2>
+      </div>
+      <div id="2" class="text-center">
+        <h3 class="text-xl font-bold">Email</h3>
+        <h2 class="text-lg">grpcristorei@seed.pr.gov.br</h2>
+      </div>
+      <div id="Telefone" class="text-center">
+        <h3 class="text-xl font-bold">Telefone</h3>
+        <h2 class="text-lg">(42) 3624-3095</h2>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-teal-500 to-green-500 text-black py-6">
+    <div class="text-center text-lg sm:text-xl font-bold">Campo para Cidade - Colégio Estadual Cristo Rei</div>
+  </footer>
+
+
+</body>
+
+</html>
