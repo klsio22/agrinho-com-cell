@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forum.css">
+    <title>Fórum</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="menu-aba">
+            <input type="checkbox" id="menu" class="container__botao" />
+            <label for="menu">
+              <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+              <li class="lista-menu__item">
+                <a href="index.html" class="lista-menu__link">Página Inicial</a>
+               </li>
+              <li class="lista-menu__item">
+                <a href="turismo.html" class="lista-menu__link">Turismo</a>
+              </li>
+              <li class="lista-menu__item">
+                <a href="lugares.html" class="lista-menu__link">Lugares Próximos a Você</a>
+              </li>
+              <li class="lista-menu__item">
+                <a href="colegio.html" class="lista-menu__link">Colégio Cristo Rei</a>
+              </li>
+              <li class="lista-menu__item">
+                <a href="nos.html" class="lista-menu__link">Sobre Nós</a>
+            </li> 
+            <li class="lista-menu__item">
+              <a href="robotica.html" class="lista-menu__link">Robótica Cristo Rei</a>
+            </li>
+            </ul>
+          </div>
+        <div class="cabecalho_direito">
+            <img class="imagem_login" src="img/icon_login.png" width="50px" alt="">
+            <input class="barra-pesquisa" type="text" placeholder="    Pesquisa">
+        </div>
+        <a href="index.html"><img src="img/logo_agrinho_2B.png" width="300px"></a> 
+    </header>
+    <h1></h1>
+    <div class="container">
+        <h2>Comente Sobre Suas Experiências em Guarapuava</h2>
+        
+        <!-- Formulário para enviar mensagens -->
+        <form id="messageForm">
+            <textarea id="messageInput" class="caixa-texto" placeholder="Digite sua mensagem..." required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        
+        <!-- Área para exibir mensagens -->
+        <div id="messageBoard">
+            <!-- As mensagens serão adicionadas dinamicamente aqui -->
+        </div>
+    </div>
+    <div class="container">
+        <h2>Ajude pessoas que estão Chegando para morar em Guarapuava com dicas sobre a cidade</h2>
+        
+        <!-- Formulário para enviar mensagens -->
+        <form id="messageForm1">
+            <textarea id="messageInput1" class="caixa-texto" placeholder="Digite sua mensagem..." required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        
+        <!-- Área para exibir mensagens -->
+        <div id="messageBoard1">
+            <!-- As mensagens serão adicionadas dinamicamente aqui -->
+        </div>
+    </div>
+      <!-- Script para manipulação das mensagens -->
+    <script src="script.js"></script>
+    <div class="social">
+      <div id="nome">
+         <h2>Campo para Cidade - Colégio Estadual Cristo Rei</h2>
+      </div>
+</body>
+</html>
