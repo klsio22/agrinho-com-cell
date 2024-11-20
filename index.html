@@ -6,14 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristo Rei Apresenta Guarapuava</title>
 
-  <!-- Caminho Base -->
-  <base href="/" />
   <script>
-    const isGitHubPages = window.location.hostname === "klsio22.github.io";
-    const basePath = isGitHubPages ? "/agrinho-com-cell/" : "/";
-    document.querySelector("base").setAttribute("href", basePath);
+    // Cria a tag <base>
+    let base = document.createElement("base");
+  
+    // Verifica se está no localhost ou no GitHub Pages
+    const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+  
+    // Define o valor do href dinamicamente
+    base.href = isLocalhost
+      ? "/" // No localhost, base é a raiz
+      : "/" + location.pathname.split("/")[1] + "/"; // No GitHub Pages, usa o nome do repositório como base
+  
+    // Adiciona a tag <base> no <head>
+    document.head.appendChild(base);
   </script>
 
+  
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/global.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
