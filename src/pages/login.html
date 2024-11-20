@@ -3,84 +3,110 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela de login</title>
-  <link rel="stylesheet" href="login.css">
+  <title>Cristo Rei Apresenta Guarapuava</title>
+  <link rel="stylesheet" href="./../css/reset.css">
+  <link rel="stylesheet" href="./../css/global.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <header class="cabecalho">
-    <div class="menu-aba">
-      <input type="checkbox" id="menu" class="container__botao" />
-      <label for="menu">
-        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-      </label>
-      <ul class="lista-menu">
-        <li class="lista-menu__item">
-          <a href="index.html" class="lista-menu__link">Página Inicial</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="forum.html" class="lista-menu__link">Fórum Principal</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="turismo.html" class="lista-menu__link">Turismo</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="lugares.html" class="lista-menu__link">Lugares Proximo a Você</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="colegio.html" class="lista-menu__link">Colégio Cristo Rei</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="nos.html" class="lista-menu__link">Sobre Nós</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="robotica.html" class="lista-menu__link">Robótica Cristo Rei</a>
-        </li>
-      </ul>
-    </div>
 
-    <a href="index.html"><img src="img/logo_agrinho_2B.png" width="300px"> </a>
+<body>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-teal-500 to-green-500 flex justify-between items-center">
+
+    <div class="flex justify-between items-center w-full sm:h-auto">
+      <!-- Menu Toggle -->
+      <details class="dropdown flex items-center">
+
+        <summary class="btn btn-ghost m-0 px-3 sm:px-4"><img src="../../assets/img/hanburguer.png" alt="Menu"
+            class="w-6 h-6 sm:w-full sm:h-10">
+        </summary>
+
+        <ul class="menu dropdown-content bg-green-600 rounded-box z-[1] w-52 p-2 shadow left-4 top-12">
+          <li><a href="/pages/forum.html" class="text-white hover:underline"">Fórum Principal</a></li>
+          <li><a href=" /pages/turismo.html" class="text-white hover:underline"" >Turismo</a></li>
+          <li><a href=" /pages/lugares.html" class="text-white hover:underline">Lugares Próximos a Você</a></li>
+          <li><a href="/pages/colegio.html" class="text-white hover:underline">Colégio Cristo Rei</a></li>
+          <li><a href="/pages/nos.html" class="text-white hover:underline">Sobre Nós</a></li>
+          <li><a href="/pages/robotica.html" class="text-white hover:underline">Robótica Cristo Rei</a></li>
+        </ul>
+      </details>
+
+      <!-- Logo -->
+      <div class="flex flex-col-reverse items-center sm:flex-row">
+        <div class="flex items-center space-x-4">
+          <a href="login.html"><img src="../../assets/img/icon_login.png" alt="Login" class="w-10"></a>
+          <input type="text" placeholder="Pesquisa"
+            class="bg-slate-50 w-full sm:block border-2 border-black rounded-full px-4 py-1 w-80" />
+        </div>
+      </div>
+
+      <div class="">
+        <a href="/" class="flex items-center">
+          <img src="/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+        </a>
+      </div>
+
+
+    </div>
   </header>
-  <div class="aba-login">
-    <div class="container">
-      <div class="form-container sign-up-container">
-        <form id="signUpForm">
-          <h1>Criar Conta</h1>
-          <input type="text" placeholder="Nome" id="signUpName" required>
-          <input type="email" placeholder="Email" id="signUpEmail" required>
-          <input type="password" placeholder="Senha" id="signUpPassword" required>
-          <button type="submit">Cadastrar</button>
-        </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <form id="signInForm">
-          <h1>Entrar</h1>
-          <input type="email" placeholder="Email" id="signInEmail" required>
-          <input type="password" placeholder="Senha" id="signInPassword" required>
-          <button type="submit">Entrar</button>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Bem-vindo de volta!</h1>
-            <p>Para continuar conectado, faça o login com suas informações pessoais</p>
-            <button class="ghost" id="signIn">Entrar</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Olá, Amigo!</h1>
-            <p>Insira seus dados pessoais e comece a jornada conosco</p>
-            <button class="ghost" id="signUp">Cadastrar</button>
+
+  <!-- Main -->
+  <main>
+    <div class="flex justify-center items-center py-12 bg-white h-full">
+      <div class="bg-white rounded-lg shadow-lg relative overflow-hidden w-[768px] max-w-full min-h-[480px]">
+
+        <!-- Signup Form -->
+        <div
+          class="absolute top-0 left-0 h-full w-1/2 opacity-0 z-10 transition-transform duration-500 ease-in-out container right-panel-active:translate-x-full">
+          <form id="signUpForm" class="flex flex-col justify-center items-center h-full text-center p-8">
+            <h1 class="text-2xl font-bold">Criar Conta</h1>
+            <input type="text" placeholder="Nome" id="signUpName" required
+              class="bg-gray-200 p-2 mb-4 rounded w-full" />
+            <input type="email" placeholder="Email" id="signUpEmail" required
+              class="bg-gray-200 p-2 mb-4 rounded w-full" />
+            <input type="password" placeholder="Senha" id="signUpPassword" required
+              class="bg-gray-200 p-2 mb-4 rounded w-full" />
+            <button type="submit"
+              class="bg-teal-500 text-white px-6 py-2 rounded-full transition transform hover:scale-105">Cadastrar</button>
+          </form>
+        </div>
+        <!-- Signin Form -->
+        <div class="absolute top-0 left-0 h-full w-1/2 z-20 transition-transform duration-500 ease-in-out">
+          <form id="signInForm" class="flex flex-col justify-center items-center h-full text-center p-8">
+            <h1 class="text-2xl font-bold text-black mb-4">Entrar</h1>
+            <input type="email" placeholder="Email" id="signInEmail" required
+              class="bg-gray-200 p-2 mb-4 rounded w-full" />
+            <input type="password" placeholder="Senha" id="signInPassword" required
+              class="bg-gray-200 p-2 mb-4 rounded w-full" />
+            <button type="submit"
+              class="bg-green-500 text-white px-6 py-2 rounded-full transition transform hover:scale-105">Entrar</button>
+          </form>
+        </div>
+        <!-- Overlay -->
+        <div
+          class="absolute top-0 left-1/2 w-1/2 h-full overflow-hidden transition-transform duration-500 ease-in-out transform container right-panel-active:-translate-x-full">
+          <div class="bg-teal-500 text-white flex flex-col justify-center items-center text-center p-8 h-full w-full">
+            <div>
+              <h1 class="text-2xl font-bold">Olá, Amigo!</h1>
+              <p class="mt-2">Insira seus dados pessoais e comece a jornada conosco</p>
+              <button id="signUp"
+                class="bg-transparent border-2 border-white text-white px-6 py-2 rounded-full mt-4">Cadastrar</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="main.js"></script>
+  </main>
 
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-teal-500 to-green-500 text-black py-6">
+    <div class="text-center text-lg sm:text-xl font-bold">Campo para Cidade - Colégio Estadual Cristo Rei</div>
+  </footer>
 
+  <script src="/src/js/main.js"></script>
 </body>
 
 </html>

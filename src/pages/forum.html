@@ -5,31 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristo Rei Apresenta Guarapuava</title>
+  <link rel="stylesheet" href="./../css/reset.css">
+  <link rel="stylesheet" href="./../css/global.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-
-
-  <style>
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-
-    main {
-      flex: 1;
-    }
-  </style>
-
 </head>
 
 
-<body class="bg-white">
+<body>
   <!-- Header -->
   <header class="bg-gradient-to-r from-teal-500 to-green-500 flex justify-between items-center">
 
@@ -61,36 +44,44 @@
       </div>
 
       <div class="">
-        <img src="../../assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+        <a href="/" class="flex items-center">
+          <img src="/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+        </a>
       </div>
+
 
     </div>
   </header>
 
   <section class="h-full">
-    <main class="container mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <h2 class="text-center text-2xl font-bold text-gray-800 mb-6">Comente Sobre Suas Experiências em Guarapuava</h2>
-      <form id="messageForm" class="mb-6">
-        <textarea id="messageInput"
-          class="w-full p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-green-500"
-          placeholder="Digite sua mensagem..." required></textarea>
-        <input type="submit" value="Enviar"
-          class="mt-4 w-full bg-green-500 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-600">
-      </form>
-      <div id="messageBoard" class="border border-gray-300 rounded-lg p-4 max-h-96 overflow-y-auto bg-gray-50"></div>
+    <main class="flex flex-col items-center justify-center h-full gap-6 mx-4">
+
+      <div class="mx-auto p-6 bg-light-500 rounded-lg shadow-lg sm:w-1/2 border border-solid border-green-900">
+        <h2 class="text-center text-2xl font-bold text-gray-800 mb-6">Comente Sobre Suas Experiências em Guarapuava</h2>
+        <form id="messageForm" class="mb-6">
+          <textarea id="messageInput"
+            class="w-full p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-green-500"
+            placeholder="Digite sua mensagem..." required></textarea>
+          <input type="submit" value="Enviar"
+            class="mt-4 w-full bg-green-500 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-600">
+        </form>
+        <div id="messageBoard" class="border border-gray-300 rounded-lg p-4 max-h-96 overflow-y-auto bg-gray-50"></div>
+      </div>
+
+      <div class="mx-auto p-6 bg-light-500 rounded-lg shadow-lg sm:w-1/2 border border-solid border-green-900">
+        <h2 class="text-center text-2xl font-bold text-gray-800 mb-6">Ajude Pessoas que Estão Chegando</h2>
+        <form id="messageForm1" class="mb-6">
+          <textarea id="messageInput1"
+            class="w-full p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-green-500"
+            placeholder="Digite sua mensagem..." required></textarea>
+          <input type="submit" value="Enviar"
+            class="mt-4 w-full bg-green-500 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-600">
+        </form>
+        <div id="messageBoard1" class="border border-gray-300 rounded-lg p-4 max-h-96 overflow-y-auto bg-gray-50"></div>
+      </div>
+
     </main>
 
-    <main class="container mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
-      <h2 class="text-center text-2xl font-bold text-gray-800 mb-6">Ajude Pessoas que Estão Chegando</h2>
-      <form id="messageForm1" class="mb-6">
-        <textarea id="messageInput1"
-          class="w-full p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-green-500"
-          placeholder="Digite sua mensagem..." required></textarea>
-        <input type="submit" value="Enviar"
-          class="mt-4 w-full bg-green-500 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-600">
-      </form>
-      <div id="messageBoard1" class="border border-gray-300 rounded-lg p-4 max-h-96 overflow-y-auto bg-gray-50"></div>
-    </main>
 
   </section>
 
@@ -100,7 +91,8 @@
   </footer>
 
   <!-- Script para manipulação das mensagens -->
-  <script src="script.js"></script>
+  <script src="/src/js/script.js"></script>
+
 </body>
 
 </html>

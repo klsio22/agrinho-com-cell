@@ -5,30 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristo Rei Apresenta Guarapuava</title>
+  <link rel="stylesheet" href="./../css/reset.css">
+  <link rel="stylesheet" href="./../css/global.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      background-color: white;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-
-    main {
-      flex: 1;
-    }
-  </style>
-
 </head>
 
 <body>
+  
   <!-- Header -->
   <header class="bg-gradient-to-r from-teal-500 to-green-500 flex justify-between items-center">
 
@@ -60,8 +44,11 @@
       </div>
 
       <div class="">
-        <img src="../../assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+        <a href="/" class="flex items-center">
+          <img src="/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+        </a>
       </div>
+
 
     </div>
   </header>
@@ -69,92 +56,128 @@
   <!-- Main -->
 
   <main class="w-full bg-[#cef997]">
-    <div class="grid grid-cols-8 grid-rows-5 max-h-screen">
-      <div class="row-start-2 row-end-5 col-start-3 col-end-7 mt-[-2em]">
-        <h1>Você sabia que?</h1>
+    <section class=" m-32">
+      <div class="grid grid-cols-8 grid-rows-5 max-h-screen">
+        <div class="row-start-2 row-end-5 col-start-3 col-end-7 mt-[-2em]">
+          <h1 class="text-3xl text-black font-bold">Você sabia que?</h1>
+        </div>
+        <div class="row-start-3 row-end-5 col-start-2 col-end-8 mt-[-1em] text-center text-lg">
+          <p class="text-black">
+            O Colégio Cristo Rei, Fundado em 1983 com um propósito claro: educar e
+            inspirar gerações. Aqui, os alunos não são apenas estudantes, são
+            protagonistas de suas histórias de aprendizado. Com uma equipe dedicada de
+            educadores e instalações modernas, oferecemos um ambiente propício ao
+            desenvolvimento acadêmico e pessoal. No Colégio Cristo Rei, valorizamos não
+            apenas o conhecimento formal, mas também o crescimento emocional e social,
+            preparando nossos alunos não apenas para os desafios acadêmicos, mas também
+            para os desafios da vida.
+          </p>
+        </div>
+        <div
+          class="row-start-1 row-end-5 col-start-7 col-end-8 flex flex-col justify-end items-center gap-10 text-center">
+          <img src="./petshopimg/fachada.png" alt="" class="w-[400px]" />
+        </div>
       </div>
-      <div class="row-start-3 row-end-5 col-start-2 col-end-8 mt-[-1em] text-center text-lg">
-        <p>
-          O Colégio Cristo Rei, Fundado em 1983 com um propósito claro: educar e
-          inspirar gerações. Aqui, os alunos não são apenas estudantes, são
-          protagonistas de suas histórias de aprendizado. Com uma equipe dedicada de
-          educadores e instalações modernas, oferecemos um ambiente propício ao
-          desenvolvimento acadêmico e pessoal. No Colégio Cristo Rei, valorizamos não
-          apenas o conhecimento formal, mas também o crescimento emocional e social,
-          preparando nossos alunos não apenas para os desafios acadêmicos, mas também
-          para os desafios da vida.
-        </p>
+    </section>
+
+    <section class=" m-32">
+      <h2 class="text-3xl ml-12 font-bold text-black">O QUE NOSSO COLÉGIO OFERECE</h2>
+
+      <div class="flex flex-wrap gap-12 items-center justify-around my-12">
+        <div id="img1" class="flex flex-col items-center text-center bg-cover bg-center"
+          style="background-image: url('/assets/img/laboratorio.jpg'); height: 500px; width: 500px;">
+
+          <div class="h-full flex flex-col justify-end drop-shadow-sm">
+            <h2 class="text-white bg-black py-2 px-4">Laboratórios</h2>
+            <p class="text-white bg-white/20">
+              Nosso laboratório de informática é um espaço moderno e dinâmico, equipado com computadores
+              avançados e tecnologia de ponta. Aqui, nossos alunos exploram o mundo digital e desenvolvem
+              habilidades essenciais, sob a orientação de professores dedicados.
+            </p>
+          </div>
+        </div>
+
+        <div id="img2" class="flex flex-col items-center text-center bg-cover bg-center opacity-100"
+          style="background-image: url('/assets/img/Salas de Aula professora.jpg'); height: 500px; width: 500px;">
+
+          <div class="h-full flex flex-col justify-end drop-shadow-sm">
+
+            <h2 class="text-white bg-black py-2 px-4">Aulas de Excelente Qualidade</h2>
+            <p class="text-white bg-white/20">
+              Nossas aulas são cuidadosamente planejadas para oferecer uma experiência educacional de qualidade
+              excepcional. Com professores dedicados e apaixonados, cada sessão é uma oportunidade de explorar
+              novos conceitos, estimular a curiosidade e promover o pensamento crítico.
+            </p>
+
+          </div>
+        </div>
+
+        <div id="img3" class="flex flex-col items-center text-center bg-cover bg-center"
+          style="background-image: url('/assets/img/Salas de Aula.jpg'); height: 500px; width: 500px;">
+          <div class="h-full flex flex-col justify-end drop-shadow-sm">
+            <h2 class="text-white bg-black py-2 px-4">Salas de Aulas</h2>
+            <p class="text-white bg-white/20">
+              Nossas salas de aula são espaços acolhedores e inspiradores, projetados para facilitar o aprendizado
+              eficaz e o desenvolvimento integral dos nossos alunos. Equipadas com tecnologia moderna e recursos
+              educacionais diversificados, proporcionamos um ambiente onde o ensino se torna interativo e envolvente.
+            </p>
+          </div>
+        </div>
       </div>
-      <div
-        class="row-start-1 row-end-5 col-start-7 col-end-8 flex flex-col justify-end items-center gap-10 text-center">
-        <img src="./petshopimg/fachada.png" alt="" class="w-[400px]" />
+    </section>
+
+    <section class="text-center m-32">
+      <h2 class="text-2xl ml-8 font-bold text-black">Tópicos Sobre</h2>
+      <h2 class="text-2xl ml-8 font-bold text-black">Nosso Colégio</h2>
+
+      <div class="flex gap-10 justify-around mt-8">
+        <div id="serv1" class="flex flex-col items-start w-full text-left">
+          <img src="/assets/img/Direção.jpg" alt="" class="mb-4 flex" />
+          <h3 class="text-xl font-bold">Equipe Gestora</h3>
+          <p class="text-black  w-3/4">DIREÇÃO: Ezilda de Fátima Ribeiro<br>DIREÇÃO AUXILIAR: Lislaine Pilati Bochnia</p>
+        </div>
+
+        <div id="serv2" class="flex flex-col items-start w-full text-left">
+          <img src="/assets/img/robotica.jpg" alt="" class="mb-4 flex" />
+          <h3 class="text-xl font-bold">Robótica</h3>
+          <p class="text-black w-3/4">
+            Venha ter aulas de Robótica em aulas em Projetos contraturno e itinerário
+            formativo Física I
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <h2 class="text-2xl ml-12">O QUE NOSSO COLÉGIO OFERECE</h2>
-
-    <div class="flex flex-wrap gap-12 items-center justify-around my-12">
-      <div id="img1" class="flex flex-col items-center text-center bg-cover bg-center"
-        style="background-image: url('img/laboratorio.jpg'); height: 500px; width: 500px;">
-        <h2 class="text-white bg-black py-2 px-4">Laboratórios</h2>
-        <p class="text-black">
-          Nosso laboratório de informática é um espaço moderno e dinâmico, equipado com computadores
-          avançados e tecnologia de ponta. Aqui, nossos alunos exploram o mundo digital e desenvolvem
-          habilidades essenciais, sob a orientação de professores dedicados.
-        </p>
-      </div>
-
-      <div id="img2" class="flex flex-col items-center text-center bg-cover bg-center"
-        style="background-image: url('img/Salas de Aula professora.jpg'); height: 500px; width: 500px;">
-        <h2 class="text-white bg-black py-2 px-4">Aulas de Excelente Qualidade</h2>
-        <p class="text-black">
-          Nossas aulas são cuidadosamente planejadas para oferecer uma experiência educacional de qualidade
-          excepcional. Com professores dedicados e apaixonados, cada sessão é uma oportunidade de explorar
-          novos conceitos, estimular a curiosidade e promover o pensamento crítico.
-        </p>
-      </div>
-
-      <div id="img3" class="flex flex-col items-center text-center bg-cover bg-center"
-        style="background-image: url('img/Salas de Aula.jpg'); height: 500px; width: 500px;">
-        <h2 class="text-white bg-black py-2 px-4">Salas de Aulas</h2>
-        <p class="text-black">
-          Nossas salas de aula são espaços acolhedores e inspiradores, projetados para facilitar o aprendizado
-          eficaz e o desenvolvimento integral dos nossos alunos. Equipadas com tecnologia moderna e recursos
-          educacionais diversificados, proporcionamos um ambiente onde o ensino se torna interativo e envolvente.
-        </p>
-      </div>
-    </div>
-
-    <h2 class="text-2xl ml-8">Tópicos Sobre</h2>
-    <h2 class="text-2xl ml-8">Nosso Colégio</h2>
-
-    <div class="flex flex-wrap gap-8 justify-around">
-      <div id="serv1" class="flex flex-col items-center">
-        <img src="img/Direção.jpg" alt="" class="mb-4" />
-        <h3 class="text-xl font-bold">Equipe Gestora</h3>
-        <p>DIREÇÃO: Ezilda de Fátima Ribeiro<br>DIREÇÃO AUXILIAR: Lislaine Pilati Bochnia</p>
+    <section class="m-32">
+      <div id="text" class="flex flex-col items-center mt-12 mb-6">
+        <h2 class="text-2xl mb-4 text-black font-bold">Conheça</h2>
+        <h2 class="text-2xl mb-4 text-black font-bold">Nossa Equipe</h2>
+        <a href="nos.html">
+          <button class="text-white bg-teal-800 rounded-full px-10 py-2 font-bold text-lg">CONFIRA</button>
+        </a>
       </div>
 
-      <div id="serv2" class="flex flex-col items-center">
-        <img src="img/robotica.jpg" alt="" class="mb-4" />
-        <h3 class="text-xl font-bold">Robótica</h3>
-        <p>
-          Venha ter aulas de Robótica em aulas em Projetos contraturno e itinerário
-          formativo Física I
-        </p>
+      <div class="flex justify-between items-center">
+        <div id="imagens" class="flex items-center gap-4 mx-5">
+          <div id="pao1" class="w-full">
+            <img src="/assets/img/saguão.jpg" alt="" class="w-full">
+            <h2 class="text-2xl font-bold text-black mt-4">Saguão</h2>
+          </div>
+          <div id="pao2" class="w-full">
+            <img src="/assets/img/Quadra.jpg" alt="" class="w-full">
+            <h2 class="text-2xl font-bold text-black mt-4">Quadra</h2>
+          </div>
+          <div id="pao3" class="w-full">
+            <img src="/assets/img/biblioteca.jpg" alt="" class="w-full">
+            <h2 class="text-2xl font-bold text-black mt-4">Biblioteca</h2>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div id="text" class="flex flex-col items-center mt-12">
-      <h2 class="text-2xl mb-4">Conheça</h2>
-      <h2 class="text-2xl mb-4">Nossa Equipe</h2>
-      <a href="nos.html">
-        <button class="text-white bg-teal-800 rounded-full px-10 py-2 font-bold text-lg">CONFIRA</button>
-      </a>
-    </div>
+    </section>
 
     <div class="flex flex-col items-center justify-center my-12">
-      <h2 class="text-3xl font-bold mb-8">Informações do Colégio</h2>
+      <h2 class="text-3xl font-bold mb-8 text-black">Informações do Colégio</h2>
       <div class="flex items-center justify-around w-full">
         <div class="mapBox w-[80vw] h-[35vw] bg-white">
           <iframe
