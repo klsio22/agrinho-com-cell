@@ -5,15 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristo Rei Apresenta Guarapuava</title>
-  <link rel="stylesheet" href="./src/css/reset.css">
-  <link rel="stylesheet" href="./src/css/global.css">
+
+  <!-- Caminho Base -->
+  <base href="/" />
+  <script>
+    const isGitHubPages = window.location.hostname === "klsio22.github.io";
+    const basePath = isGitHubPages ? "/agrinho-com-cell/" : "/";
+    document.querySelector("base").setAttribute("href", basePath);
+  </script>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <base href="/agrinho-com-cell/">
 
   <style>
     html,
