@@ -12,76 +12,98 @@
 </head>
 
 <body>
-  <header class="cabecalho">
-    <div class="menu-aba">
-      <input type="checkbox" id="menu" class="container__botao" />
-      <label for="menu">
-        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-      </label>
-      <ul class="lista-menu">
-        <li class="lista-menu__item">
-          <a href="index.html" class="lista-menu__link">Página Inicial</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="forum.html" class="lista-menu__link">Fórum Principal</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="turismo.html" class="lista-menu__link">Turismo</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="colegio.html" class="lista-menu__link">Colégio Cristo Rei</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="nos.html" class="lista-menu__link">Sobre Nós</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="robotica.html" class="lista-menu__link">Robótica Cristo Rei</a>
-        </li>
-      </ul>
-    </div>
-    <div class="cabecalho_direito">
-      <a href="login.html"><img src="img/icon_login.png" width="50px" alt=""></a>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-teal-500 to-green-500 flex justify-between items-center">
 
-      <input class="barra-pesquisa" type="text" placeholder="    Pesquisa">
+    <div class="flex justify-between items-center w-full md:h-20">
+      <!-- Menu Toggle -->
+      <details class="dropdown flex items-center">
+
+        <summary class="btn btn-ghost m-0 px-3 sm:px-4"><img src="../../assets/img/hanburguer.png" alt="Menu"
+            class="w-6 h-6 sm:w-full sm:h-10">
+        </summary>
+
+        <ul class="menu dropdown-content bg-green-600 rounded-box z-[1] w-52 p-2 shadow left-4 top-12">
+          <li><a href="forum.html" class="text-white hover:underline"">Fórum Principal</a></li>
+          <li><a href=" turismo.html" class="text-white hover:underline"" >Turismo</a></li>
+          <li><a href=" lugares.html" class="text-white hover:underline">Lugares Próximos a Você</a></li>
+          <li><a href="colegio.html" class="text-white hover:underline">Colégio Cristo Rei</a></li>
+          <li><a href="nos.html" class="text-white hover:underline">Sobre Nós</a></li>
+          <li><a href="robotica.html" class="text-white hover:underline">Robótica Cristo Rei</a></li>
+        </ul>
+      </details>
+
+      <!-- Logo -->
+      <div class="flex flex-col-reverse items-center sm:flex-row">
+        <div class="flex items-center space-x-4">
+          <a href="login.html"><img src="../../assets/img/icon_login.png" alt="Login" class="w-10"></a>
+          <input type="text" placeholder="Pesquisa"
+            class="bg-slate-50 w-full sm:block border-2 border-black rounded-full px-4 py-1 w-80" />
+        </div>
+      </div>
+
+      <div class="">
+        <a href="/" class="flex items-center">
+          <img src="/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+        </a>
+      </div>
+
+
     </div>
-    <a href="index.html"><img src="img/logo_agrinho_2B.png" width="300px"></a>
   </header>
-  <h2 class="lugares-texto">Farmácias Perto de Você</h2>
-  <div class="corpo">
-    <div class="mapBox">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24194.261310795966!2d-51.48173796947384!3d-25.376396279101545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfarm%C3%A1cias!5e0!3m2!1spt-BR!2sbr!4v1722450871442!5m2!1spt-BR!2sbr"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-  <h2 class="lugares-texto">Mercados Perto de Você</h2>
-  <div class="corpo">
-    <div class="mapBox">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28838.787816900323!2d-51.481809989110126!3d-25.376394260664483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smercados!5e0!3m2!1spt-BR!2sbr!4v1722451872251!5m2!1spt-BR!2sbr"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-  <h2 class="lugares-texto">Áreas Médicas Perto de Você</h2>
-  <div class="corpo">
-    <div class="mapBox">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d35752.5140023385!2d-51.485630067423045!3d-25.37352863739912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital!5e0!3m2!1spt-BR!2sbr!4v1722452062790!5m2!1spt-BR!2sbr"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-  <h2 class="lugares-texto">Postos de Combustíveis Perto de Você</h2>
-  <div class="corpo">
-    <div class="mapBox">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30496.971936925696!2d-51.482217713320665!3d-25.381636757031202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sposto%20de%20gasolina!5e0!3m2!1spt-BR!2sbr!4v1722452198065!5m2!1spt-BR!2sbr"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
+  
+  <!-- Main Content -->
+  <main class="py-6 px-4 bg-white">
+    <!-- Título e Mapas -->
+    <section class="space-y-8 bg-white">
+      <!-- Reutilização de Layout -->
+      <div class="mapa-secao">
+        <h2 class="text-2xl font-bold text-gray-700 text-center mb-4">Farmácias Perto de Você</h2>
+        <div class="flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24194.261310795966!2d-51.48173796947384!3d-25.376396279101545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfarm%C3%A1cias!5e0!3m2!1spt-BR!2sbr!4v1722450871442!5m2!1spt-BR!2sbr"
+            width="100%" height="450" class="rounded-lg shadow-md" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="mapa-secao">
+        <h2 class="text-2xl font-bold text-gray-700 text-center mb-4">Mercados Perto de Você</h2>
+        <div class="flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28838.787816900323!2d-51.481809989110126!3d-25.376394260664483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smercados!5e0!3m2!1spt-BR!2sbr!4v1722451872251!5m2!1spt-BR!2sbr"
+            width="100%" height="450" class="rounded-lg shadow-md" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="mapa-secao">
+        <h2 class="text-2xl font-bold text-gray-700text-center mb-4">Áreas Médicas Perto de Você</h2>
+        <div class="flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d35752.5140023385!2d-51.485630067423045!3d-25.37352863739912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital!5e0!3m2!1spt-BR!2sbr!4v1722452062790!5m2!1spt-BR!2sbr"
+            width="100%" height="450" class="rounded-lg shadow-md" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="mapa-secao">
+        <h2 class="text-2xl font-bold text-gray-700 text-center mb-4">Postos de Combustíveis Perto de Você</h2>
+        <div class="flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30496.971936925696!2d-51.482217713320665!3d-25.381636757031202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sposto%20de%20gasolina!5e0!3m2!1spt-BR!2sbr!4v1722452198065!5m2!1spt-BR!2sbr"
+            width="100%" height="450" class="rounded-lg shadow-md" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-teal-500 to-green-500 text-black py-6">
+    <div class="text-center text-lg sm:text-xl font-bold">Campo para Cidade - Colégio Estadual Cristo Rei</div>
+  </footer>
+
 
 </body>
 

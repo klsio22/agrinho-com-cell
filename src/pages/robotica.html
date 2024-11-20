@@ -10,56 +10,79 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="cabecalho">
-    <div class="menu-aba">
-      <input type="checkbox" id="menu" class="container__botao" />
-      <label for="menu">
-        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-      </label>
-      <ul class="lista-menu">
-        <li class="lista-menu__item">
-          <a href="index.html" class="lista-menu__link">Página Inicial</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="forum.html" class="lista-menu__link">Fórum Principal</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="turismo.html" class="lista-menu__link">Turismo</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="lugares.html" class="lista-menu__link">Lugares Próximos a Você</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="colegio.html" class="lista-menu__link">Colégio Cristo Rei</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="nos.html" class="lista-menu__link">Sobre Nós</a>
-        </li>
-      </ul>
-    </div>
 
-    <div class="cabecalho_direito">
-      <a href="login.html"><img class="imagem_login" src="img/icon_login.png" width="50px" alt=""></a>
-      <input class="barra-pesquisa" type="text" placeholder="    Pesquisa">
+<body>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-teal-500 to-green-500 flex justify-between items-center">
+
+    <div class="flex justify-between items-center w-full md:h-20">
+      <!-- Menu Toggle -->
+      <details class="dropdown flex items-center">
+
+        <summary class="btn btn-ghost m-0 px-3 sm:px-4"><img src="../../assets/img/hanburguer.png" alt="Menu"
+            class="w-6 h-6 sm:w-full sm:h-10">
+        </summary>
+
+        <ul class="menu dropdown-content bg-green-600 rounded-box z-[1] w-52 p-2 shadow left-4 top-12">
+          <li><a href="forum.html" class="text-white hover:underline"">Fórum Principal</a></li>
+        <li><a href=" turismo.html" class="text-white hover:underline"" >Turismo</a></li>
+        <li><a href=" lugares.html" class="text-white hover:underline">Lugares Próximos a Você</a></li>
+          <li><a href="colegio.html" class="text-white hover:underline">Colégio Cristo Rei</a></li>
+          <li><a href="nos.html" class="text-white hover:underline">Sobre Nós</a></li>
+          <li><a href="robotica.html" class="text-white hover:underline">Robótica Cristo Rei</a></li>
+        </ul>
+      </details>
+
+      <!-- Logo -->
+      <div class="flex flex-col-reverse items-center sm:flex-row">
+        <div class="flex items-center space-x-4">
+          <a href="login.html"><img src="../../assets/img/icon_login.png" alt="Login" class="w-10"></a>
+          <input type="text" placeholder="Pesquisa"
+            class="bg-slate-50 w-full sm:block border-2 border-black rounded-full px-4 py-1 w-80" />
+        </div>
+      </div>
+
+      <div class="">
+        <a href="/" class="flex items-center">
+          <img src="/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+        </a>
+      </div>
+
+
     </div>
-    <a href="index.html"><img src="img/logo_agrinho_2B.png" width="300px"></a>
   </header>
-  <div class="imagem_robotica">
-    <img src="img/robotica mapa mental.png" class="img-mapa-mental" alt="">
-  </div>
-  <img class="imgrobo" src="img/robo.png" alt="" width="150px">
-  <div class="texto-robotica">
-    <h2> Curso de Robótica:</h2>
-    <p>Para os migrantes do campo para a cidade, a robótica não apenas representa uma porta de entrada para novas
-      habilidades e carreiras promissoras, mas também facilita a integração em um mundo urbano cada vez mais
-      tecnológico, proporcionando ferramentas para enfrentar desafios modernos e aproveitar oportunidades de
-      desenvolvimento pessoal e profissional.</p>
-  </div>
-  <div class="social">
-    <div id="nome">
-      <h2>Campo para Cidade - Colégio Estadual Cristo Rei</h2>
+
+  <!-- Main -->
+  <main class="bg-[#FFDE59]">
+
+    <div class="flex items-end relative m-8 aspect-w-4 aspect-h-3 h-48 md:h-[1000px]">
+      <!-- Imagem de Robótica -->
+      <div class="relative ">
+        <img src="/assets/img/robotica_mapa_mental.png" class="img-mapa-mental" alt="Mapa Mental da Robótica">
+      </div>
+
+      <!-- Imagem do Robô -->
+      <div class="flex justify-center my-4 absolute right-0 w-1/5">
+        <img class="w-1/2" src="/assets/img/robo.png" alt="Robô">
+      </div>
     </div>
+    <!-- Texto sobre o curso de robótica -->
+    <div class="texto-robotica text-left px-4 max-w-7xl mx-auto m-20">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">Curso de Robótica:</h2>
+      <p class="text-justify text-lg leading-relaxed text-gray-800">
+        Para os migrantes do campo para a cidade, a robótica não apenas representa uma porta de entrada
+        para novas habilidades e carreiras promissoras, mas também facilita a integração em um mundo urbano
+        cada vez mais tecnológico, proporcionando ferramentas para enfrentar desafios modernos e aproveitar
+        oportunidades de desenvolvimento pessoal e profissional.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-teal-500 to-green-500 text-black py-6">
+    <div class="text-center text-lg sm:text-xl font-bold">Campo para Cidade - Colégio Estadual Cristo Rei</div>
+  </footer>
+
 </body>
 
 </html>

@@ -12,129 +12,138 @@
 </head>
 
 <body>
-  <header class="cabecalho">
-    <div class="menu-aba">
-      <input type="checkbox" id="menu" class="container__botao" />
-      <label for="menu">
-        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-      </label>
-      <ul class="lista-menu">
-        <li class="lista-menu__item">
-          <a href="index.html" class="lista-menu__link">Página Inicial</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="forum.html" class="lista-menu__link">Fórum Principal</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="turismo.html" class="lista-menu__link">Turismo</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="lugares.html" class="lista-menu__link">Lugares Próximos a Você</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="colegio.html" class="lista-menu__link">Colégio Cristo Rei</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="robotica.html" class="lista-menu__link">Robótica Cristo Rei</a>
-        </li>
-      </ul>
-    </div>
-    <div class="cabecalho_direito">
-      <a href="login.html"><img src="img/icon_login.png" width="50px" alt=""></a>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-teal-500 to-green-500 flex justify-between items-center">
 
-      <input class="barra-pesquisa" type="text" placeholder="    Pesquisa">
-    </div>
-    <a href="index.html"><img src="img/logo_agrinho_2B.png" width="300px"></a>
-  </header>
-  <div class="grid">
-    <div class="texto-conheça">
-      <h1>Conheça Nossa Equipe</h1>
-    </div>
-    <div class="alana">
-      <a href="#"><img src="img/alana.jpg" class="imagem-equipe" alt="" width="180px"></a>
-      <h2>Alana</h2>
-    </div>
-    <div class="ana-julia">
-      <a href="#"><img src="img/ana.jpg" class="imagem-equipe" alt="" width="180px"></a>
-      <h2>Ana Júlia</h2>
-    </div>
-    <div class="delsielly">
-      <a href="#"><img src="img/delsielly.jpg" class="imagem-equipe" alt="" width="180px"></a>
-      <h2>Delsíelly</h2>
-    </div>
-    <div class="vinicius">
-      <a href="#"><img src="img/vinicius.jpg" class="imagem-equipe" alt="" width="180px"></a>
-      <h2>Vinicius</h2>
-    </div>
-    <div class="pablo">
-      <a href="#"><img src="img/pablo.jpg" class="imagem-equipe" alt="" width="180px"></a>
-      <h2>Profº Pablo</h2>
-    </div>
-    <div class="thalles">
-      <a href="#"><img src="img/thalles.jpg" class="imagem-equipe" alt="" width="180px"></a>
-      <h2>Profº Thalles</h2>
-    </div>
+    <div class="flex justify-between items-center w-full md:h-20">
+      <!-- Menu Toggle -->
+      <details class="dropdown flex items-center">
 
-    <div class="area-alana">
-      <p>Nome: Alana Moreira Heckler.
-        <br>Idade: 18 anos.
-        <br>Função: Programadora.
-        <br>Estudos: 2° ano do ensino Médio no colégio estadual Cristo Rei.
-        <br>Hobbies: Desenhos, Artesanato, Jogos e Programação.
-        <br>Carreira: Pretendo me formar em arquitetura e desenho.
-      </p>
-    </div>
-    <div class="area-ana-julia">
-      <p>Nome: Ana Júlia Damásio da Silva.
-        <br>Idade: 16 anos.
-        <br>Função: Designer.
-        <br>Estudos: 2° ano do ensino Médio no colégio estadual Cristo Rei.
-        <br>Hobbies: Decorar, jogar e criar novas coisas.
-        <br>Carreira: Pretendo estudar e me formar na faculdade de Medicina Veterinária.
-      </p>
-    </div>
-    <div class="area-delsielly">
-      <p>Nome: Delsiélly de Ramos Pereira.
-        <br>Idade: 16 anos.
-        <br>Função: Designer.
-        <br>Estudos: 2° ano do ensino Médio no colégio estadual Cristo Rei.
-        <br>Hobbies: Desenhos de moda, maquiagem e criações.
-        <br>Carreira: Pretendo fazer faculdade de moda e seguir a carreira de estilista.
-      </p>
-    </div>
-    <div class="area-vinicius">
-      <p>Nome: Vinicius Matheus Belz.
-        <br>Idade: 16 anos.
-        <br>Função: Programador.
-        <br>Estudos: 2° ano do ensino Médio no colégio estadual Cristo Rei.
-        <br>Hobbies: Jogar voleibol, vídeo game, programação.
-        <br>Carreira: Pretendo me formar em matemática ou educação física.
-      </p>
-    </div>
-    <div class="area-pablo">
-      <p>Nome: Pablo Saldanha da Luz.
-        <br>Idade: 23 anos.
-        <br>Função: Professor orientador.
-        <br>Disciplina: Pogramação - Matemática II.
-        <br>Hobbies: Jogos, corrida, assitir filmes e assitir series.
-        <br>Carreira: formado em matemática, mestrando em ensino.
-      </p>
-    </div>
-    <div class="area-thalles">
-      <p>Nome: Thalles Horn.
-        <br>Idade: 24 anos.
-        <br>Função: Professor coorientador.
-        <br>Disciplina: Robótica - Física I.
-        <br>Hobbies: Assistir futebol, jogar video game e jogos de tabuleiro.
-        <br>Carreira: Formado em matemática, mestrando em ensino.
-      </p>
-    </div>
-    <footer class="social">
-      <div id="nome">
-        <h2>Campo para Cidade - Colégio Estadual Cristo Rei</h2>
+        <summary class="btn btn-ghost m-0 px-3 sm:px-4"><img src="../../assets/img/hanburguer.png" alt="Menu"
+            class="w-6 h-6 sm:w-full sm:h-10">
+        </summary>
+
+        <ul class="menu dropdown-content bg-green-600 rounded-box z-[1] w-52 p-2 shadow left-4 top-12">
+          <li><a href="forum.html" class="text-white hover:underline"">Fórum Principal</a></li>
+          <li><a href=" turismo.html" class="text-white hover:underline"" >Turismo</a></li>
+          <li><a href=" lugares.html" class="text-white hover:underline">Lugares Próximos a Você</a></li>
+          <li><a href="colegio.html" class="text-white hover:underline">Colégio Cristo Rei</a></li>
+          <li><a href="nos.html" class="text-white hover:underline">Sobre Nós</a></li>
+          <li><a href="robotica.html" class="text-white hover:underline">Robótica Cristo Rei</a></li>
+        </ul>
+      </details>
+
+      <!-- Logo -->
+      <div class="flex flex-col-reverse items-center sm:flex-row">
+        <div class="flex items-center space-x-4">
+          <a href="login.html"><img src="../../assets/img/icon_login.png" alt="Login" class="w-10"></a>
+          <input type="text" placeholder="Pesquisa"
+            class="bg-slate-50 w-full sm:block border-2 border-black rounded-full px-4 py-1 w-80" />
+        </div>
       </div>
-    </footer>
-  </div>
+
+      <div class="">
+        <a href="/" class="flex items-center">
+          <img src="/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+        </a>
+      </div>
+
+
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="bg-green-200 p-4">
+    <h1 class="text-4xl font-bold text-center mb-8 text-gray-700">Conheça Nossa Equipe</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+        <img src="/assets/img/alana.jpg" alt="Alana" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h2 class="text-xl font-bold">Alana</h2>
+        <p class="text-center mt-2 text-gray-600">
+          Nome: Alana Moreira Heckler.<br>
+          Idade: 18 anos.<br>
+          Função: Programadora.<br>
+          Estudos: 2° ano do ensino Médio no colégio estadual Cristo Rei.<br>
+          Hobbies: Desenhos, Artesanato, Jogos e Programação.<br>
+          Carreira: Pretendo me formar em arquitetura e desenho.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+        <img src="/assets/img/ana.jpg" alt="Ana Júlia" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h2 class="text-xl font-bold">Ana Júlia</h2>
+        <p class="text-center mt-2 text-gray-600">
+          Nome: Ana Júlia Damásio da Silva.<br>
+          Idade: 16 anos.<br>
+          Função: Designer.<br>
+          Estudos: 2° ano do ensino Médio no colégio estadual Cristo Rei.<br>
+          Hobbies: Decorar, jogar e criar novas coisas.<br>
+          Carreira: Pretendo estudar e me formar na faculdade de Medicina Veterinária.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+        <img src="/assets/img/delsielly.jpg" alt="Delsiélly" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h2 class="text-xl font-bold">Delsiélly</h2>
+        <p class="text-center mt-2 text-gray-600">
+          Nome: Delsiélly de Ramos Pereira.<br>
+          Idade: 16 anos.<br>
+          Função: Designer.<br>
+          Estudos: 2° ano do ensino Médio no colégio estadual Cristo Rei.<br>
+          Hobbies: Desenhos de moda, maquiagem e criações.<br>
+          Carreira: Pretendo fazer faculdade de moda e seguir a carreira de estilista.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+        <img src="/assets/img/vinicius.jpg" alt="Vinicius" class="w-40 h-40 object-cover rounded-full mb-4">
+        <h2 class="text-xl font-bold">Vinicius</h2>
+        <p class="text-center mt-2 text-gray-600">
+          Nome: Vinicius Matheus Belz.<br>
+          Idade: 16 anos.<br>
+          Função: Programador.<br>
+          Estudos: 2° ano do ensino Médio no colégio estadual Cristo Rei.<br>
+          Hobbies: Jogar vôlei, videogame, programação.<br>
+          Carreira: Pretendo me formar em matemática ou educação física.
+        </p>
+      </div>
+
+
+      <!-- Card Prof. Pablo -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+        <img src="/assets/img/pablo.jpg" alt="Prof. Pablo" class="w-40 h-40 rounded-full object-cover mb-4">
+        <h2 class="text-2xl font-bold">Profº Pablo</h2>
+        <p class="text-gray-600 mt-2">
+          Nome: Pablo Saldanha da Luz.<br>
+          Idade: 23 anos.<br>
+          Função: Professor orientador.<br>
+          Disciplina: Programação - Matemática II.<br>
+          Hobbies: Jogos, corrida, assistir filmes e séries.<br>
+          Carreira: Formado em matemática, mestrando em ensino.
+        </p>
+      </div>
+
+      <!-- Card Prof. Thalles -->
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+        <img src="/assets/img/thalles.jpg" alt="Prof. Thalles" class="w-40 h-40 rounded-full object-cover mb-4">
+        <h2 class="text-2xl font-bold">Profº Thalles</h2>
+        <p class="text-gray-600 mt-2">
+          Nome: Thalles Horn.<br>
+          Idade: 24 anos.<br>
+          Função: Professor coorientador.<br>
+          Disciplina: Robótica - Física I.<br>
+          Hobbies: Assistir futebol, jogar videogame e jogos de tabuleiro.<br>
+          Carreira: Formado em matemática, mestrando em ensino.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-teal-500 to-green-500 text-black py-6">
+    <div class="text-center text-lg sm:text-xl font-bold">Campo para Cidade - Colégio Estadual Cristo Rei</div>
+  </footer>
 
 </body>
 
