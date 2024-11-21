@@ -5,8 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristo Rei Apresenta Guarapuava</title>
-  <link rel="stylesheet" href="/public/css/reset.css">
-  <link rel="stylesheet" href="/public/css/global.css">
+  <script>
+    let base = document.createElement("base");
+    const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+    base.href = isLocalhost
+      ? "/"
+      : "/" + location.pathname.split("/")[1] + "/";
+    document.head.appendChild(base);
+  </script>
+  <link rel="stylesheet" href="public/css/reset.css">
+  <link rel="stylesheet" href="public/css/global.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -19,7 +27,7 @@
       <!-- Menu Toggle -->
       <details class="dropdown flex items-center">
 
-        <summary class="btn btn-ghost m-0 px-3 sm:px-4"><img src="/public/assets/img/hanburguer.png" alt="Menu"
+        <summary class="btn btn-ghost m-0 px-3 sm:px-4"><img src="public/assets/img/hanburguer.png" alt="Menu"
             class="w-6 h-6 sm:w-full sm:h-10">
         </summary>
 
@@ -36,7 +44,7 @@
       <!-- Logo -->
       <div class="flex flex-col-reverse items-center sm:flex-row">
         <div class="flex items-center space-x-4">
-          <a href="login.html"><img src="/public/assets/img/icon_login.png" alt="Login" class="w-10"></a>
+          <a href="login.html"><img src="public/assets/img/icon_login.png" alt="Login" class="w-10"></a>
           <input type="text" placeholder="Pesquisa"
             class="bg-slate-50 w-full sm:block border-2 border-black rounded-full px-4 py-1 w-80" />
         </div>
@@ -44,7 +52,7 @@
 
       <div class="">
         <a href="/" class="flex items-center">
-          <img src="/public/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+          <img src="public/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
         </a>
       </div>
 
@@ -57,7 +65,7 @@
     <h1 class="text-4xl font-bold text-center mb-8 text-gray-700">Conheça Nossa Equipe</h1>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
-        <img src="/public/assets/img/alana.jpg" alt="Alana" class="w-40 h-40 object-cover rounded-full mb-4">
+        <img src="public/assets/img/alana.jpg" alt="Alana" class="w-40 h-40 object-cover rounded-full mb-4">
         <h2 class="text-xl font-bold">Alana</h2>
         <p class="text-center mt-2 text-gray-600">
           Nome: Alana Moreira Heckler.<br>
@@ -70,7 +78,7 @@
       </div>
 
       <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
-        <img src="/public/assets/img/ana.jpg" alt="Ana Júlia" class="w-40 h-40 object-cover rounded-full mb-4">
+        <img src="public/assets/img/ana.jpg" alt="Ana Júlia" class="w-40 h-40 object-cover rounded-full mb-4">
         <h2 class="text-xl font-bold">Ana Júlia</h2>
         <p class="text-center mt-2 text-gray-600">
           Nome: Ana Júlia Damásio da Silva.<br>
@@ -83,7 +91,7 @@
       </div>
 
       <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
-        <img src="/public/assets/img/delsielly.jpg" alt="Delsiélly" class="w-40 h-40 object-cover rounded-full mb-4">
+        <img src="public/assets/img/delsielly.jpg" alt="Delsiélly" class="w-40 h-40 object-cover rounded-full mb-4">
         <h2 class="text-xl font-bold">Delsiélly</h2>
         <p class="text-center mt-2 text-gray-600">
           Nome: Delsiélly de Ramos Pereira.<br>
@@ -96,7 +104,7 @@
       </div>
 
       <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
-        <img src="/public/assets/img/vinicius.jpg" alt="Vinicius" class="w-40 h-40 object-cover rounded-full mb-4">
+        <img src="public/assets/img/vinicius.jpg" alt="Vinicius" class="w-40 h-40 object-cover rounded-full mb-4">
         <h2 class="text-xl font-bold">Vinicius</h2>
         <p class="text-center mt-2 text-gray-600">
           Nome: Vinicius Matheus Belz.<br>
@@ -111,7 +119,7 @@
 
       <!-- Card Prof. Pablo -->
       <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-        <img src="/public/assets/img/pablo.jpg" alt="Prof. Pablo" class="w-40 h-40 rounded-full object-cover mb-4">
+        <img src="public/assets/img/pablo.jpg" alt="Prof. Pablo" class="w-40 h-40 rounded-full object-cover mb-4">
         <h2 class="text-2xl font-bold">Profº Pablo</h2>
         <p class="text-gray-600 mt-2">
           Nome: Pablo Saldanha da Luz.<br>
@@ -125,7 +133,7 @@
 
       <!-- Card Prof. Thalles -->
       <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-        <img src="/public/assets/img/thalles.jpg" alt="Prof. Thalles" class="w-40 h-40 rounded-full object-cover mb-4">
+        <img src="public/assets/img/thalles.jpg" alt="Prof. Thalles" class="w-40 h-40 rounded-full object-cover mb-4">
         <h2 class="text-2xl font-bold">Profº Thalles</h2>
         <p class="text-gray-600 mt-2">
           Nome: Thalles Horn.<br>
