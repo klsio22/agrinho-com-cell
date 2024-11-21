@@ -1,54 +1,71 @@
-Para melhorar a documentação do seu projeto, você pode detalhar mais sobre o escopo, objetivos, como configurar o ambiente de desenvolvimento e como os arquivos estão organizados, além de explicar o uso das tecnologias adotadas. Aqui está uma versão aprimorada da documentação:
-
----
+### Documentação do Projeto
 
 # Refatoração do Site "Agrinho Conhecer Guarapuava"
 
-Este projeto tem como objetivo a refatoração do site **Agrinho Conhecer Guarapuava**, utilizando as tecnologias **TwindCSS**, **HTML** e **JavaScript**, além de uma reorganização da estrutura de pastas para melhorar a escalabilidade e a manutenção do projeto. A refatoração visa melhorar o desempenho, a responsividade e a experiência do usuário no site, com foco na melhoria visual e na reestruturação do código.
+Este projeto refatora o site **Agrinho Conhecer Guarapuava**, utilizando **TwindCSS**, **HTML** e **JavaScript**, com foco em performance, responsividade e experiência do usuário. Além disso, uma nova estrutura de pastas foi criada para garantir escalabilidade e facilidade de manutenção.
+
+📄 **[GitHub Pages do Projeto](https://klsio22.github.io/agrinho-com-cell/)**
+
+---
 
 ## Tecnologias Utilizadas
 
-- **[TwindCSS](https://tailwindcss.com/)**: Utilizado para o gerenciamento de estilos de forma eficiente e modular, aproveitando o sistema de utilitários do Tailwind CSS.
-- **HTML**: Estruturação da página e organização do conteúdo semântico.
-- **JavaScript**: Adição de funcionalidades interativas e dinâmicas no site.
+- **[TwindCSS](https://tailwindcss.com/)**: Para gerenciamento eficiente e modular dos estilos, usando o sistema utilitário do TailwindCSS.
+- **HTML**: Para estruturar o conteúdo de forma semântica.
+- **JavaScript**: Para funcionalidades interativas e dinâmicas.
+
+---
 
 ## Objetivos da Refatoração
 
-1. **Melhorar a Performance**: Utilizar as vantagens do TwindCSS para diminuir o tamanho dos arquivos CSS e melhorar a performance do site.
-2. **Responsividade**: Tornar o site completamente responsivo, melhorando a experiência do usuário em dispositivos móveis e desktop.
-3. **Reorganização das Pastas**: Criar uma estrutura de pastas mais modular e escalável, facilitando a manutenção e futuras expansões do site.
-4. **Melhorar a Experiência do Usuário (UX)**: Melhorias no design visual e na interação com o site, utilizando princípios de design moderno e boas práticas de usabilidade.
+1. **Melhorar a Performance**  
+   Utilizar as vantagens do TwindCSS para reduzir o tamanho dos arquivos CSS, resultando em maior eficiência e carregamento mais rápido.
+
+2. **Responsividade**  
+   Garantir uma experiência uniforme e otimizada para usuários em dispositivos móveis, tablets e desktops.
+
+3. **Organização Modular**  
+   Reestruturar pastas para maior organização e escalabilidade, facilitando futuras alterações e expansões.
+
+4. **Melhoria da Experiência do Usuário (UX)**  
+   Tornar o site mais intuitivo, atrativo e fácil de navegar, alinhando-se a padrões de design moderno.
+
+---
 
 ## Estrutura do Projeto
 
-A estrutura de pastas foi reorganizada para promover uma melhor organização e facilidade de manutenção. Abaixo está a nova organização:
+A nova estrutura de pastas promove clareza e facilita o desenvolvimento contínuo:
 
 ```
 /public
     /assets           # Imagens, fontes e outros arquivos estáticos
-    /css              # Arquivos CSS compilados (gerados pelo TwindCSS)
-    /js               # Arquivos JavaScript, incluindo funcionalidades do site
-/index.html          # Página inicial do site
+    /css              # Arquivos CSS gerados pelo TwindCSS
+    /js               # Scripts JavaScript do site
+/index.html          # Página inicial
 /src
-    /pages            # Páginas específicas, como a homepage, sobre, etc. 
+    /pages            # Páginas específicas do site
 README.md             # Documentação do projeto
 ```
 
-### Descrição dos Diretórios
+### Detalhamento dos Diretórios
 
-- **/public**: Contém arquivos estáticos acessíveis publicamente, como imagens e scripts compilados.
-  - **/assets**: Imagens e fontes que são referenciadas no site.
-  - **/css**: Arquivos CSS gerados a partir do TwindCSS, com todos os estilos do projeto.
-  - **/js**: Scripts JavaScript que adicionam funcionalidades interativas no site.
-- **/src**: Contém o código-fonte modular do site.
-  - **/pages**: Páginas específicas, como a página inicial, sobre, etc.
+- **/public**: Contém os recursos estáticos acessíveis publicamente.
+  - **/assets**: Inclui imagens, ícones, fontes e outros arquivos estáticos.
+  - **/css**: Arquivos CSS gerados pelo TwindCSS.
+  - **/js**: Scripts JavaScript responsáveis pela interatividade do site.
+  
+- **/src**: Contém o código-fonte do projeto.
+  - **/pages**: Arquivos HTML organizados por página (homepage, contato, etc.).
 
-### Alterações Importantes
+---
 
-1. **Uso do TwindCSS**: O TwindCSS é utilizado para gerar estilos dinâmicos, o que diminui o tamanho do arquivo CSS final. A configuração do Twind permite customizações e cria uma interface mais limpa para o desenvolvimento.
-   
-2. **Estrutura de Pastas**: A organização das pastas foi repensada para se alinhar a boas práticas de desenvolvimento, separando componentes reutilizáveis, layouts e páginas.
+## Funcionalidades e Alterações Implementadas
 
-3. **Responsividade**: A refatoração se concentra na adaptação do design para diferentes dispositivos, utilizando o sistema de grid e breakpoints do TwindCSS.
+1. **Estilização com TwindCSS**  
+   O TwindCSS permite a geração de estilos dinâmicos e reduz o tamanho final do CSS. Ele foi configurado para personalizar cores, fontes e componentes específicos.
 
-Essa estrutura de documentação ajuda a esclarecer a organização do projeto e a forma como ele pode ser executado e mantido.
+2. **Estrutura Modular**  
+   A separação de arquivos em diretórios específicos organiza melhor o projeto, promovendo reutilização e manutenibilidade.
+
+3. **Design Responsivo**  
+   Utilizando breakpoints e grids do TwindCSS, o design foi ajustado para funcionar em qualquer dispositivo, de smartphones a telas maiores.
