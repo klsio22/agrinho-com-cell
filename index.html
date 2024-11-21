@@ -13,6 +13,7 @@
     // Verifica se está no localhost ou no GitHub Pages
     const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
   
+    console.log(isLocalhost)
     // Define o valor do href dinamicamente
     base.href = isLocalhost
       ? "/" // No localhost, base é a raiz
@@ -22,7 +23,7 @@
     document.head.appendChild(base);
   </script>
 
-  
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/global.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -69,7 +70,7 @@
       <!-- Menu Toggle -->
       <details class="dropdown flex items-center">
 
-        <summary class="btn btn-ghost m-0 px-3 sm:px-4"><img src="/public/assets/img/hanburguer.png" alt="Menu"
+        <summary class="btn btn-ghost m-0 px-3 sm:px-4"><img src="public/assets/img/hanburguer.png" alt="Menu"
             class="w-6 h-6 sm:w-full sm:h-10">
         </summary>
 
@@ -86,7 +87,7 @@
       <!-- Logo -->
       <div class="flex flex-col-reverse items-center sm:flex-row">
         <div class="flex items-center space-x-4">
-          <a href="login.html"><img src="/public/assets/img/icon_login.png" alt="Login" class="w-10"></a>
+          <a href="login.html"><img src="public/assets/img/icon_login.png" alt="Login" class="w-10"></a>
           <input type="text" placeholder="Pesquisa"
             class="bg-slate-50 w-full sm:block border-2 border-black rounded-full px-4 py-1 w-80" />
         </div>
@@ -94,7 +95,7 @@
 
       <div class="">
         <a href="/" class="flex items-center">
-          <img src="/public/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
+          <img src="public/assets/img/logo_agrinho_2B.png" alt="Logo Cristo Rei" class="w-40 sm:w-48" />
         </a>
       </div>
 
@@ -104,15 +105,15 @@
   <!-- Slider -->
 
   <div class="h-[198px] sm:h-[650px] bg-no-repeat bg-cover"
-    style="background-image: url('/public/assets/img/imagem_fundo.png');">
+    style="background-image: url('public/assets/img/imagem_fundo.png');">
     <div class="relative flex items-center w-full h-full">
       <div
         class="absolute z-0 top-0 left-0 w-full sm:h-auto sm:bg-cover sm:bg-center sm:w-1/2 sm:left-[25%] sm:top-[12%]">
         <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
           space-between="30" loop="true">
-          <swiper-slide><img src="/public/assets/img/banner_principal.png" alt="Banner Principal"></swiper-slide>
-          <swiper-slide><img src="/public/assets/img/Segundo_banner.png" alt="Segundo Banner"></swiper-slide>
-          <swiper-slide><img src="/public/assets/img/Terceiro_banner.png" alt="Terceiro Banner"></swiper-slide>
+          <swiper-slide><img src="public/assets/img/banner_principal.png" alt="Banner Principal"></swiper-slide>
+          <swiper-slide><img src="public/assets/img/Segundo_banner.png" alt="Segundo Banner"></swiper-slide>
+          <swiper-slide><img src="public/assets/img/Terceiro_banner.png" alt="Terceiro Banner"></swiper-slide>
         </swiper-container>
       </div>
     </div>
