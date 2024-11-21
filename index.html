@@ -7,19 +7,12 @@
   <title>Cristo Rei Apresenta Guarapuava</title>
 
   <script>
-    // Cria a tag <base>
     let base = document.createElement("base");
-  
-    // Verifica se está no localhost ou no GitHub Pages
     const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-  
-    console.log(isLocalhost)
-    // Define o valor do href dinamicamente
     base.href = isLocalhost
-      ? "/" // No localhost, base é a raiz
-      : "/" + location.pathname.split("/")[1] + "/"; // No GitHub Pages, usa o nome do repositório como base
-  
-    // Adiciona a tag <base> no <head>
+      ? "/"
+      : "/" + location.pathname.split("/")[1] + "/";
+
     document.head.appendChild(base);
   </script>
 
