@@ -8,12 +8,6 @@ body {
   background-color: white;
 }
 
-@media and (max-width: 768px) {
-  body {
-    height: auto;
-  }
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -21,4 +15,10 @@ body {
 
 main {
   flex: 1;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
 }
